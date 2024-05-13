@@ -7,43 +7,32 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.chatapp.client.SignupController">
 
-    <!-- Partie gauche avec fond bleu, image et titre -->
     <Pane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #0077cc;">
-        <!-- Image -->
-
-        <!-- Titre -->
         <Label layoutX="82.0" layoutY="200.0" text="Localhost chat" textFill="WHITE">
             <font>
                 <Font name="System Bold" size="18.0" />
             </font>
         </Label>
-        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@images/icons8-weixing-250.png" />
-            </image>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="50.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@images/icons8-weixing-250.png"/>
         </ImageView>
     </Pane>
 
-    <!-- Partie droite avec formulaire -->
     <Pane layoutX="300.0" prefHeight="400.0" prefWidth="300.0">
-        <!-- Nom d'utilisateur -->
         <TextField fx:id="username" layoutX="72.0" layoutY="157.0" prefHeight="30.0" prefWidth="200.0" promptText="Username" />
-        <!-- Mot de passe -->
         <PasswordField fx:id="password" layoutX="72.0" layoutY="200.0" prefHeight="30.0" prefWidth="200.0" promptText="Password" />
-        <!-- Bouton de connexion -->
         <Button layoutX="140.0" layoutY="242.0" mnemonicParsing="false" text="Signup" onAction="#showMainPage" />
 
         <Button layoutX="149.0" layoutY="298.0" mnemonicParsing="false" onAction="#showLoginPage" text="Login" />
 
-        <ImageView fitHeight="73.0" fitWidth="29.0" layoutX="25.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@images/icons8-utilisateur-50.png" />
-            </image>
+        <ImageView fitHeight="73.0" fitWidth="29.0" layoutX="25.0" layoutY="158.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@images/icons8-utilisateur-50.png"/>
         </ImageView>
-        <ImageView fitHeight="29.0" fitWidth="21.0" layoutX="29.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@images/icons8-mot-de-passe-100.png" />
-            </image>
+        <ImageView fitHeight="29.0" fitWidth="21.0" layoutX="29.0" layoutY="205.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@images/icons8-mot-de-passe-100.png"/>
         </ImageView>
         <Label layoutX="107.0" layoutY="74.0" text="SIGNUP" textAlignment="CENTER" textFill="#0077cc">
             <font>

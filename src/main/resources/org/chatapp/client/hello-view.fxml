@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.chatapp.client.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.chatapp.client.HelloController">
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+    <ImageView fitHeight="72.0" fitWidth="46.0" layoutX="192.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@images/icons8-weixing-100.png" />
+    </ImageView>
+    <Label layoutX="249.0" layoutY="35.0" text="Chat APP" textAlignment="CENTER" textFill="#0077cc">
+        <font>
+            <Font name="JetBrains Mono ExtraBold" size="36.0" />
+        </font></Label>
+
+    <ScrollPane fx:id="scrollPane" fitToWidth="true" layoutX="25.0" layoutY="106.0" prefHeight="313.0" prefWidth="550">
+        <VBox fx:id="vbox_message" />
+    </ScrollPane>
+
+    <Button fx:id="button_send" layoutX="395.0" layoutY="429.0" prefHeight="35.0" prefWidth="54.0" text="Send" />
+    <TextField fx:id="tf_message" layoutX="68.0" layoutY="429.0" prefHeight="35.0" prefWidth="293.0" promptText="Message" />
+
+</AnchorPane>

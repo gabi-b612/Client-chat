@@ -51,7 +51,7 @@ public class SignupController {
             Stage stage = new Stage();
             stage.setScene(scene);
             stage.setResizable(false);
-            stage.setTitle("Safety.io");
+            stage.setTitle("Chat App");
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
